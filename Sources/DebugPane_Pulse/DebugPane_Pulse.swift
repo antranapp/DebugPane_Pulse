@@ -1,10 +1,14 @@
+//
+// Copyright © 2021 An Tran. All rights reserved.
+//
+
 import Combine
 import Foundation
 import Pulse
+import PulseUI
 import SwiftUI
 import TweakPane
 import UIKit
-import PulseUI
 
 public struct PulseBlade: Blade {
     public var name: String? = "Pulse"
@@ -16,7 +20,7 @@ public struct PulseBlade: Blade {
     }
     
     public func render() -> AnyView {
-        AnyView(ContentView(action: {presentingViewController?.present($0, animated: true)} ))
+        AnyView(ContentView(action: { presentingViewController?.present($0, animated: true) }))
     }
 }
 
