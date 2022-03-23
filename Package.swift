@@ -12,6 +12,7 @@ let package = Package(
             targets: ["DebugPane_Pulse"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/antranapp/DebugPane", .branch("master")),
         .package(
             url: "https://github.com/kean/Pulse",
             .upToNextMajor(from: "0.20.0")
@@ -21,6 +22,7 @@ let package = Package(
         .target(
             name: "DebugPane_Pulse",
             dependencies: [
+                "DebugPane",
                 "Pulse",
                 .product(name: "PulseUI", package: "Pulse")
             ]

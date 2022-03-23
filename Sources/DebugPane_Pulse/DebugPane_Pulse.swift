@@ -7,7 +7,7 @@ import UIKit
 import PulseUI
 
 public struct PulseBlade: Blade {
-    public var name: String = "Pulse"
+    public var name: String? = "Pulse"
     
     private weak var presentingViewController: UIViewController?
     
